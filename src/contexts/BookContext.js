@@ -1,10 +1,3 @@
-// 1) Default Context ---> this.context
-// - Context nesnesini olusturucaz
-// - Baslangcı değeri verilip export edilecek
-// - İlgili component da import edilecek
-// - context type yardımıyla contexti ilgili componenta atıycaz
-// - this.context yardımıyla ilgili bilgilere ulaşacağız.
-
 import React from 'react'
 
 export const BookContext =  React.createContext()
