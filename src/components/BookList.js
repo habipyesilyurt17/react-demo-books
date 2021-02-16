@@ -11,7 +11,7 @@ class BookList extends React.Component {
         {(contextTheme) => (
           <BookContext.Consumer>
             {(contextBook) => {
-              const { isDarkTheme, dark, light } = contextTheme
+              const { isDarkTheme, dark, light, changeTheme } = contextTheme
               const theme = isDarkTheme ? dark : light
               const { books } = contextBook
               return (
@@ -24,6 +24,7 @@ class BookList extends React.Component {
                       <h3 className="section-subheading text-muted">
                         Lorem ipsum dolor sit amet consectetur.
                       </h3>
+                      <button onClick={changeTheme} type="button" className="btn btn-sm btn-info" style={{marginTop: '-70px'}}>Change Theme</button>
                     </div>
                     <div className="row">
                       {books.map((book, i) => (
